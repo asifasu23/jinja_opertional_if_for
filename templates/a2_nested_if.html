@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This nested- if </h1>
+    {% if a > b %}
+        {% if a > c %}
+            <h1> a value {{a}} is greater </h1>
+        {% else %}
+            <h1> c value {{c}} is grreater</h1>
+        {% endif %}
+    {% else %}
+            {% if b > c %}
+                <h1>b value {{b}} is greater</h1>
+            {% else %}
+                <h1>c value  {{c}} is greater </h1>
+            {% endif %}
+    {% endif %}
+</body>
+</html>
